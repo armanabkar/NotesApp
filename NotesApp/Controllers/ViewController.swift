@@ -64,7 +64,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         DispatchQueue.main.async {
             let note = self.notes[indexPath.row]
             viewController.navigationItem.largeTitleDisplayMode = .never
-            viewController.title = "Note"
+            viewController.title = note.title
             viewController.noteTitle = note.title
             viewController.note = note.note
             self.navigationController?.pushViewController(viewController, animated: true)
