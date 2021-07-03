@@ -73,7 +73,3 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
 }
 
-struct Note {
-    let title: String
-    let note: String
-}

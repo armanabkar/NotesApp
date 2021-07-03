@@ -15,6 +15,7 @@
 		F0140CB8268F4BC000479885 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0140CB6268F4BC000479885 /* LaunchScreen.storyboard */; };
 		F0140CC2268F4D7A00479885 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0140CC1268F4D7A00479885 /* NoteViewController.swift */; };
 		F0140CC6268F4D8600479885 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0140CC5268F4D8600479885 /* EntryViewController.swift */; };
+		F0140CD0268F5BB800479885 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0140CCF268F5BB800479885 /* Note.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F0140CB9268F4BC100479885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0140CC1268F4D7A00479885 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
 		F0140CC5268F4D8600479885 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		F0140CCF268F5BB800479885 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +62,50 @@
 		F0140CAA268F4BC000479885 /* NotesApp */ = {
 			isa = PBXGroup;
 			children = (
+				F0140CCB268F5B8800479885 /* Controllers */,
+				F0140CCE268F5BAE00479885 /* Models */,
+				F0140CC8268F5B7200479885 /* Support Files */,
+				F0140CCA268F5B8000479885 /* Views */,
+			);
+			path = NotesApp;
+			sourceTree = "<group>";
+		};
+		F0140CC8268F5B7200479885 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
 				F0140CAB268F4BC000479885 /* AppDelegate.swift */,
 				F0140CAD268F4BC000479885 /* SceneDelegate.swift */,
-				F0140CAF268F4BC000479885 /* ViewController.swift */,
-				F0140CB1268F4BC000479885 /* Main.storyboard */,
 				F0140CB4268F4BC000479885 /* Assets.xcassets */,
 				F0140CB6268F4BC000479885 /* LaunchScreen.storyboard */,
 				F0140CB9268F4BC100479885 /* Info.plist */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		F0140CCA268F5B8000479885 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F0140CB1268F4BC000479885 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F0140CCB268F5B8800479885 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F0140CAF268F4BC000479885 /* ViewController.swift */,
 				F0140CC1268F4D7A00479885 /* NoteViewController.swift */,
 				F0140CC5268F4D8600479885 /* EntryViewController.swift */,
 			);
-			path = NotesApp;
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F0140CCE268F5BAE00479885 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F0140CCF268F5BB800479885 /* Note.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +183,7 @@
 				F0140CB0268F4BC000479885 /* ViewController.swift in Sources */,
 				F0140CAC268F4BC000479885 /* AppDelegate.swift in Sources */,
 				F0140CAE268F4BC000479885 /* SceneDelegate.swift in Sources */,
+				F0140CD0268F5BB800479885 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +332,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QMW26WR72K;
-				INFOPLIST_FILE = NotesApp/Info.plist;
+				INFOPLIST_FILE = "NotesApp/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +351,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QMW26WR72K;
-				INFOPLIST_FILE = NotesApp/Info.plist;
+				INFOPLIST_FILE = "NotesApp/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
