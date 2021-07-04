@@ -15,7 +15,7 @@
 		F0140CB8268F4BC000479885 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0140CB6268F4BC000479885 /* LaunchScreen.storyboard */; };
 		F0140CC2268F4D7A00479885 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0140CC1268F4D7A00479885 /* NoteViewController.swift */; };
 		F0140CC6268F4D8600479885 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0140CC5268F4D8600479885 /* EntryViewController.swift */; };
-		F0140CD0268F5BB800479885 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0140CCF268F5BB800479885 /* Note.swift */; };
+		F0140CE9269196F400479885 /* Note.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F0140CE7269196F400479885 /* Note.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		F0140CB9268F4BC100479885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0140CC1268F4D7A00479885 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
 		F0140CC5268F4D8600479885 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
-		F0140CCF268F5BB800479885 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		F0140CE8269196F400479885 /* Note.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Note.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,7 @@
 		F0140CCE268F5BAE00479885 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F0140CCF268F5BB800479885 /* Note.swift */,
+				F0140CE7269196F400479885 /* Note.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -181,9 +181,9 @@
 				F0140CC2268F4D7A00479885 /* NoteViewController.swift in Sources */,
 				F0140CC6268F4D8600479885 /* EntryViewController.swift in Sources */,
 				F0140CB0268F4BC000479885 /* ViewController.swift in Sources */,
+				F0140CE9269196F400479885 /* Note.xcdatamodeld in Sources */,
 				F0140CAC268F4BC000479885 /* AppDelegate.swift in Sources */,
 				F0140CAE268F4BC000479885 /* SceneDelegate.swift in Sources */,
-				F0140CD0268F5BB800479885 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +385,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F0140CE7269196F400479885 /* Note.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F0140CE8269196F400479885 /* Note.xcdatamodel */,
+			);
+			currentVersion = F0140CE8269196F400479885 /* Note.xcdatamodel */;
+			path = Note.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F0140CA0268F4BC000479885 /* Project object */;
 }
